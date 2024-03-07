@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { FaHome, FaUser, FaProjectDiagram } from 'react-icons/fa';
 import { GiSkills } from "react-icons/gi";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 export const Container = styled.header`
   flex: 1;
@@ -17,41 +19,35 @@ export const Container = styled.header`
 `;
 
 export const Nav = styled.nav`
-  
-`;
-
-export const ListUl = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   gap: 10rem;
 `;
 
-export const ListItem = styled.li`
+export const LinkMenu = styled(ScrollLink)`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
+  margin-top: 12px;
+
   gap: 5px;
 
-  list-style: none;
   font-size: 1rem;
-  font-weight: 600;
   color: ${({ theme }) => theme.colors.secondary};
+
   cursor: pointer;
+
   transition: color 0.3s;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
     filter: blur(1px);
   }
-`;
-
-export const LinkItem = styled.a`
-  text-decoration: none;
-  color: inherit;
 `;
 
 export const HomeIcon = styled(FaHome)`

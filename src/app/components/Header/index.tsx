@@ -5,9 +5,7 @@ import {
   AboutIcon,
   Container, 
   HomeIcon, 
-  LinkItem, 
-  ListItem, 
-  ListUl, 
+  LinkMenu, 
   Nav,
   ProjectIcon,
   SkillsIcon
@@ -17,32 +15,22 @@ export const Header = () => {
   return (
     <Container>
       <Nav>
-        <ListUl>
-          <ListItem>
-            <HomeIcon />
-            <LinkItem href="#intro">
-              Introdução
-            </LinkItem>
-          </ListItem>
-          <ListItem>
-            <AboutIcon />
-            <LinkItem href="#about">
-              Sobre
-            </LinkItem>
-          </ListItem>
-          <ListItem>
-            <ProjectIcon />
-            <LinkItem href="#projects">
-              Projetos
-            </LinkItem>
-          </ListItem>
-          <ListItem>
-            <SkillsIcon />
-            <LinkItem href="#skills">
-              Habilidades
-            </LinkItem>
-          </ListItem>
-        </ListUl>
+        <LinkMenu to="intro" smooth={true} duration={500}>
+          <HomeIcon />
+          Intro
+        </LinkMenu>
+        <LinkMenu to="about" smooth={true} duration={500}>
+          <AboutIcon />
+          About
+        </LinkMenu>
+        <LinkMenu to="projects" smooth={true} duration={500}>
+          <ProjectIcon />
+          Project
+        </LinkMenu>
+        <LinkMenu to="skills" smooth={true} duration={500}>
+          <SkillsIcon />
+          Skill
+        </LinkMenu>
       </Nav>
     </Container>
   );

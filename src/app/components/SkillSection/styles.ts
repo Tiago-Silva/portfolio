@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { 
   SiHtml5,
   SiCss3, 
@@ -17,7 +17,11 @@ import {
 
 import { FaJava } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
+import { slideInLeft } from "../Animation/styles";
 
+interface SkillProps {
+  isVisible: boolean;
+}
 
 export const Container = styled.section`
   display: flex;
@@ -38,7 +42,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.div<SkillProps>`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,6 +50,12 @@ export const Content = styled.div`
   align-items: center;
 
   width: 100%;
+
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      animation: ${slideInLeft} 2s ease-out;
+  `}
 
   gap: 10px;
 `;

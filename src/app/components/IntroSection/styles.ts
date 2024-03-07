@@ -1,10 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { slideInLeft, slideInRight } from "../Animation/styles";
 
+interface IntroProps {
+  isVisible: boolean;
+}
 
 export const Container = styled.section`
   position: relative;
 `;
+
 
 export const SvgBackground = styled.svg`
   position: absolute;
@@ -15,7 +20,7 @@ export const SvgBackground = styled.svg`
   width: 16rem;
   transform: translateY(-50%);
   mask-image: radial-gradient(closest-side, white, transparent);
-
+  
   @media (min-width: 768px) {
     left: 50%;
     top: 50%;
@@ -42,12 +47,18 @@ export const WrapperAbout = styled.div`
   }
 `;
 
-export const AboutInfo = styled.div`
+export const AboutInfo = styled.div<IntroProps>`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
   margin-bottom: 2rem;
+
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      animation: ${slideInLeft} 2s ease-out;
+  `}
 
   @media (min-width: 768px) {
     text-align: start;
@@ -107,10 +118,16 @@ export const LinkedInIcon = styled(FaLinkedin)`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-export const GifContainer = styled.div`
+export const GifContainer = styled.div<IntroProps>`
   display: flex;
   justify-content: center;
   padding-left: 0;
+
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      animation: ${slideInRight} 2s ease-out;
+  `}
 
   @media (min-width: 768px) {
     padding-left: 5rem;

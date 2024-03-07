@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   Container, 
@@ -24,95 +24,106 @@ import {
   TypeScriptIcon,
   WrapperIcon
 } from './styles';
+import VisibilitySensor from 'react-visibility-sensor';
+
 
 export const SkillSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const onChange = (visiblity: boolean) => {
+    setIsVisible(visiblity);
+  };
+
   return (
-    <Container id="skills">
-      <Title>Minhas Skills</Title>
+    <VisibilitySensor onChange={onChange}>
+      <Container id="skills" style={{ opacity: isVisible ? 1 : 0 }}>
+        <Title>Minhas Skills</Title>
 
-      <Content>
+        <Content isVisible={isVisible}>
 
-        <WrapperIcon>
-          <HtmlIcon />
-          <Text>HTML</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <HtmlIcon />
+            <Text>HTML</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <CssIcon />
-          <Text>CSS</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <CssIcon />
+            <Text>CSS</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <JavasciptIcon />
-          <Text>JavaScript</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <JavasciptIcon />
+            <Text>JavaScript</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <ReactIcon />
-          <Text>React.JS</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <ReactIcon />
+            <Text>React.JS</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <ReactIcon />
-          <Text>React Native</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <ReactIcon />
+            <Text>React Native</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <StyledIcon />
-          <Text>S. components</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <StyledIcon />
+            <Text>S. components</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <TypeScriptIcon />
-          <Text>Typescript</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <TypeScriptIcon />
+            <Text>Typescript</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <NextIcon />
-          <Text>NEXTJS</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <NextIcon />
+            <Text>NEXTJS</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <ExpoIcon />
-          <Text>EXPO</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <ExpoIcon />
+            <Text>EXPO</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <TauriIcon />
-          <Text>Tauri</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <TauriIcon />
+            <Text>Tauri</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <MysqlIcon />
-          <Text>MYQL</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <MysqlIcon />
+            <Text>MYQL</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <SpringIcon />
-          <Text>Spring Boot</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <SpringIcon />
+            <Text>Spring Boot</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <SpringSecurityIcon />
-          <Text>Spring security</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <SpringSecurityIcon />
+            <Text>Spring security</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <JavaIcon />
-          <Text>Java</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <JavaIcon />
+            <Text>Java</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <GitIcon />
-          <Text>GitHub</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <GitIcon />
+            <Text>GitHub</Text>
+          </WrapperIcon>
 
-        <WrapperIcon>
-          <DockerIcon />
-          <Text>Docker</Text>
-        </WrapperIcon>
+          <WrapperIcon>
+            <DockerIcon />
+            <Text>Docker</Text>
+          </WrapperIcon>
 
-      </Content>
-    </Container>
+        </Content>
+      </Container>
+    </VisibilitySensor>
+
   );
 }

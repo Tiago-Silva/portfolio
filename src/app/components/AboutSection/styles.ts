@@ -1,5 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { slideInLeft, slideInRight } from "../Animation/styles";
 
+interface AboutSectionProps {
+  isVisible: boolean;
+}
 
 export const Container = styled.section`
   display: flex;
@@ -28,12 +32,19 @@ export const Content = styled.div`
   justify-content: space-around;
 `;
 
-export const WrapperImage = styled.div`
+export const WrapperImage = styled.div<AboutSectionProps>`
   flex: 1;
   display: flex;
   justify-content: center;
   max-width: 10rem;
   padding: 0 0.625rem;
+
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      animation: ${slideInLeft} 2s ease-out;
+  `}
+
   @media (min-width: 1024px) {
     max-width: none;
   }
@@ -55,13 +66,19 @@ export const StyledImage = styled.div`
   }
 `;
 
-export const WrapperText = styled.div`
+export const WrapperText = styled.div<AboutSectionProps>`
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   word-wrap: break-word;
+
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      animation: ${slideInRight} 2s ease-out;
+  `}
 `;
 
 export const Text = styled.h2`
