@@ -15,7 +15,7 @@ import Image from 'next/image';
 
 export const AboutSection = () => {
   return (
-    <Container>
+    <Container id="about">
       <WrapperTitle>
         <Title>Sobre mim</Title>
       </WrapperTitle>

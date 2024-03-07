@@ -174,7 +174,7 @@ const projects = [
 
 export const ProjectSection: React.FC = () => {
   return (
-    <Container>
+    <Container id="projects">
       <Title>Projetos</Title>
 
       <Content>

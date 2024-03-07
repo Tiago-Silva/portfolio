@@ -20,7 +20,7 @@ import Image from 'next/image';
 
 export const IntroSection = () => {
   return (
-    <Container>
+    <Container id="intro">
       
        <SvgBackground
         viewBox='0 0 1024 1024'

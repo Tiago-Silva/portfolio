@@ -27,7 +27,7 @@ import {
 
 export const SkillSection = () => {
   return (
-    <Container>
+    <Container id="skills">
       <Title>Minhas Skills</Title>
 
       <Content>
