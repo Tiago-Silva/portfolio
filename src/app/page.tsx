@@ -1,5 +1,6 @@
 import { AboutSection } from "./components/AboutSection";
 import { IntroSection } from "./components/IntroSection"
+import { ProjectSection } from "./components/ProjectSection";
 
 export default function Home() {
   return (
@@ -7,6 +8,8 @@ export default function Home() {
       <IntroSection />
 
       <AboutSection />
+      
+      <ProjectSection />
     </main>
   );
 }
