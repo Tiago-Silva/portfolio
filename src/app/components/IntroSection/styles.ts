@@ -57,13 +57,13 @@ export const AboutInfo = styled.div`
 
 export const Title = styled.h1`
   font-size: 3rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   margin: 0;
 `;
 
 export const SubTitle = styled.h1`
   font-size: 2rem;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const WrapperButton = styled.div`
@@ -84,7 +84,7 @@ export const StyledButton = styled.button`
   justify-content: space-around;
   align-items: center;
   background-color: black;
-  border-color: #7c3aed;
+  border-color: ${({ theme }) => theme.colors.primary};
   border-style: solid; 
   border-width: 2px;
   font-size: 2rem;
@@ -95,16 +95,16 @@ export const StyledButton = styled.button`
 
 export const Link = styled.a`
   font-size: 2rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   text-decoration: none;
 `;
 
 export const GitIcon = styled(FaGithub)`
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const LinkedInIcon = styled(FaLinkedin)`
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const GifContainer = styled.div`

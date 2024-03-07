@@ -10,7 +10,7 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
   font-size: 3rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 

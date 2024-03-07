@@ -18,7 +18,7 @@ export const WrapperTitle = styled.div`
 
 export const Title = styled.h1`
   font-size: 3rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
@@ -43,7 +43,7 @@ export const StyledImage = styled.div`
   aspect-ratio: 1 / 1;
   transform: rotate(3deg);
   border-radius: 0.5rem;
-  background-color: #F9FAFB;
+  background-color: ${({ theme }) => theme.colors.image_background};
   overflow: hidden;
 
   max-width: 400px;
@@ -66,6 +66,6 @@ export const WrapperText = styled.div`
 
 export const Text = styled.h2`
   font-size: 1.2rem;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
   text-align: justify;
 `;

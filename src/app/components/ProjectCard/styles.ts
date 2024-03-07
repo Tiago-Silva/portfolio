@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   max-height: 400px;
 
-  border: 2px solid #7c3aed;
+  border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 4px;
 `;
 
@@ -29,14 +29,14 @@ export const Footer = styled.div`
 
 export const FooterTitle = styled.h1`
   font-size: 1.5rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
   margin: 0;
 `;
 
 export const FooterText = styled.h1`
   font-size: 0.9rem;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
   margin: 0;
 `;
 
@@ -50,13 +50,13 @@ export const WrapperGitInfo = styled.div`
 
 export const GitIcon = styled(FaGithub)`
   font-size: 1.2rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const GitLink = styled.a`
   font-size: 1.2rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
   text-decoration: none;
 `;

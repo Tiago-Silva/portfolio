@@ -39,12 +39,12 @@ export const ListItem = styled.li`
   list-style: none;
   font-size: 1rem;
   font-weight: 600;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
   cursor: pointer;
   transition: color 0.3s;
 
   &:hover {
-    color: #7c3aed;
+    color: ${({ theme }) => theme.colors.primary};
     filter: blur(1px);
   }
 `;
@@ -56,20 +56,20 @@ export const LinkItem = styled.a`
 
 export const HomeIcon = styled(FaHome)`
   font-size: 1rem;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const AboutIcon = styled(FaUser)`
   font-size: 1rem;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const ProjectIcon = styled(FaProjectDiagram)`
   font-size: 1rem;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const SkillsIcon = styled(GiSkills)`
   font-size: 1rem;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
 `;

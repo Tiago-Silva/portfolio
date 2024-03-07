@@ -3,10 +3,10 @@
 
 export default {
   colors: {
-      primary: '#5636D3',
-      secondary: '#FF872C',
+      primary: '#7c3aed',
+      secondary: '#828282',
       
-      secondary_light: 'rgba(255, 135, 44, 0.3)',
+      image_background: '#F9FAFB',
       success: '#12A454',
       success_light: 'rgba(18, 164, 84, 0.5)',
 

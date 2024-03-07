@@ -30,7 +30,7 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
   font-size: 3rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 
   @media (max-width: 768px) {
@@ -62,7 +62,7 @@ export const WrapperIcon = styled.div`
   width: 10%;
   height: 6%;
 
-  box-shadow: 0px 0px 10px 2px #7c3aed;
+  box-shadow: 0px 0px 10px 2px ${({ theme }) => theme.colors.primary};
   border-radius: 4px;
 
   margin-top: 10px;
@@ -75,7 +75,7 @@ export const WrapperIcon = styled.div`
 
 export const Text = styled.h1`
   font-size: 1.2vw;
-  color: #828282;
+  color: ${({ theme }) => theme.colors.secondary};
   font-weight: 700;
 
   @media (max-width: 768px) {
@@ -85,91 +85,91 @@ export const Text = styled.h1`
 
 export const HtmlIcon = styled(SiHtml5)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const CssIcon = styled(SiCss3)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const JavasciptIcon = styled(SiJavascript)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const StyledIcon = styled(SiStyledcomponents)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const NextIcon = styled(TbBrandNextjs)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const ExpoIcon = styled(SiExpo)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const MysqlIcon = styled(SiMysql)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const SpringIcon = styled(SiSpringboot)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const SpringSecurityIcon = styled(SiSpringsecurity)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const JavaIcon = styled(FaJava)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 
 export const ReactIcon = styled(SiReact)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const TypeScriptIcon = styled(SiTypescript)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const TauriIcon = styled(SiTauri)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const GitIcon = styled(SiGithub)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
 
 export const DockerIcon = styled(SiDocker)`
   font-size: 4rem;
-  color: #7c3aed;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
 `;
