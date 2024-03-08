@@ -25,6 +25,10 @@ export const WrapperImage = styled.div`
 
 export const Footer = styled.div`
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const FooterTitle = styled.h1`
@@ -56,6 +60,10 @@ export const GitIcon = styled(FaGithub)`
   font-size: 1.2rem;
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const GitLink = styled.a`
@@ -63,4 +71,8 @@ export const GitLink = styled.a`
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
