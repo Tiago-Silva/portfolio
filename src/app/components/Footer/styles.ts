@@ -41,6 +41,14 @@ export const Wrapper = styled.div`
   margin: 0;
 `;
 
+export const WrapperText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`;
+
 export const Text = styled.h1`
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.secondary};

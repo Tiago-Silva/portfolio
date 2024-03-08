@@ -6,7 +6,8 @@ import {
   Content, 
   Text, 
   Title,
-  Wrapper
+  Wrapper,
+  WrapperText
 } from './styles';
 import { GitIcon, Link, LinkedInIcon, StyledButton, WrapperButton } from '../IntroSection/styles';
 
@@ -14,7 +15,9 @@ export const Footer = () => {
   return (
     <Container>
       <Content>
-        <Title>&apos;Não é a linguagem de programação que define o programador, mas sim sua lógica&apos;</Title>
+        <WrapperText>
+          <Title>&apos;Não é a linguagem de programação que define o programador, mas sim sua lógica&apos;</Title>
+        </WrapperText>
         <Wrapper>
           <WrapperButton>
             <StyledButton>
@@ -37,8 +40,10 @@ export const Footer = () => {
             </StyledButton>
           </WrapperButton>
         </Wrapper>
-        <Text>© Copyright 2024. Todos os direitos reservados.</Text>
-        <Text>Desenvolvido por Tiago Silva</Text>
+        <WrapperText>
+          <Text>© Copyright 2024. Todos os direitos reservados.</Text>
+          <Text>Desenvolvido por Tiago Silva</Text>
+        </WrapperText>
       </Content>
     </Container>
   );
