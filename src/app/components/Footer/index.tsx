@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <Container>
       <Content>
-        <Title>"Não é a linguagem de programação que define o programador, mas sim sua lógica"</Title>
+        <Title>'Não é a linguagem de programação que define o programador, mas sim sua lógica'</Title>
         <Wrapper>
           <WrapperButton>
             <StyledButton>

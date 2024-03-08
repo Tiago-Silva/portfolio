@@ -1,7 +1,7 @@
 
 
 
-export default {
+const theme = {
   colors: {
       primary: '#7c3aed',
       secondary: '#828282',
@@ -23,7 +23,6 @@ export default {
       background_card: '#303035',
       background_header: '#2a2e34',
       background_promotion: '#30353c',
-
   },
 
   // fonts: {
@@ -32,3 +31,5 @@ export default {
   //     bold: 'Poppins_700Bold'
   // }
 }
+
+export default theme;
