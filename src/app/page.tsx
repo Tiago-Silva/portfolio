@@ -1,4 +1,5 @@
 import { AboutSection } from "./components/AboutSection";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { IntroSection } from "./components/IntroSection"
 import { ProjectSection } from "./components/ProjectSection";
@@ -16,6 +17,8 @@ export default function Home() {
       <ProjectSection />
 
       <SkillSection />
+
+      <Footer />
     </main>
   );
 }

@@ -9,7 +9,6 @@ export const Container = styled.header`
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: #212121;
 
   left: -10px;
 
@@ -33,7 +32,7 @@ export const LinkMenu = styled(ScrollLink)`
   justify-content: center;
   align-items: center;
 
-  margin-top: 12px;
+  margin-top: 15px;
 
   gap: 5px;
 
