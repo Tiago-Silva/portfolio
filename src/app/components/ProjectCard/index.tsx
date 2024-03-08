@@ -37,8 +37,13 @@ export const ProjectCard = ({
           width={300}
           height={300}
           quality='95'
-          layout='responsive'
+          sizes="100vw"
+          style={{
+            width: '100%',
+            height: 'auto',
+          }}
           priority={true}
+          unoptimized={true}
         />
       </WrapperImage>
 

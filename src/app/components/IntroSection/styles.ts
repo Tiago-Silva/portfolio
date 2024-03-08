@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { slideInLeft, slideInRight } from "../Animation/styles";
 
 interface IntroProps {
-  isVisible: boolean;
+  $isVisible: boolean;
 }
 
 export const Container = styled.section`
@@ -54,8 +54,8 @@ export const AboutInfo = styled.div<IntroProps>`
   text-align: center;
   margin-bottom: 2rem;
 
-  ${({ isVisible }) =>
-    isVisible &&
+  ${({ $isVisible }) =>
+    $isVisible &&
     css`
       animation: ${slideInLeft} 2s ease-out;
   `}
@@ -123,8 +123,8 @@ export const GifContainer = styled.div<IntroProps>`
   justify-content: center;
   padding-left: 0;
 
-  ${({ isVisible }) =>
-    isVisible &&
+  ${({ $isVisible }) =>
+    $isVisible &&
     css`
       animation: ${slideInRight} 2s ease-out;
   `}

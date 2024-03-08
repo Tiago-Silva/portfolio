@@ -20,7 +20,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { slideInLeft } from "../Animation/styles";
 
 interface SkillProps {
-  isVisible: boolean;
+  $isVisible: boolean;
 }
 
 export const Container = styled.section`
@@ -51,8 +51,8 @@ export const Content = styled.div<SkillProps>`
 
   width: 100%;
 
-  ${({ isVisible }) =>
-    isVisible &&
+  ${({ $isVisible }) =>
+    $isVisible &&
     css`
       animation: ${slideInLeft} 2s ease-out;
   `}

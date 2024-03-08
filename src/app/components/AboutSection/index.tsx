@@ -29,23 +29,27 @@ export const AboutSection = () => {
           <Title>Sobre mim</Title>
         </WrapperTitle>
         <Content>
-          <WrapperImage isVisible={isVisible}>
+          <WrapperImage $isVisible={isVisible}>
             <StyledImage>
               <Image
                 src='/avatar.png'
                 alt='Tiago Silva'
                 width={400}
                 height={400}
+                sizes="100vw"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
                 quality='95'
-                layout='responsive'
                 priority={true}
               />
             </StyledImage>
           </WrapperImage>
 
-          <WrapperText isVisible={isVisible}>
+          <WrapperText $isVisible={isVisible}>
             <Text>
-              Sou apaixo por tecnologia e inovação, e estou sempre em busca de novos desafios.
+              Sou apaixonado por tecnologia e inovação, e estou sempre em busca de novos desafios.
             </Text>
             <Text>
               Aualmente cursando engenharia de software estou sempre em busca de novos conhecimentos e experiências.

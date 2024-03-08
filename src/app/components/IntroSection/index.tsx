@@ -51,7 +51,7 @@ export const IntroSection = () => {
         </SvgBackground>
 
         <WrapperAbout>
-          <AboutInfo isVisible={isVisible}>
+          <AboutInfo $isVisible={isVisible}>
             <Title>Olá eu sou o</Title>
             <Title>Tiago Silva</Title>
 
@@ -79,15 +79,20 @@ export const IntroSection = () => {
             </WrapperButton>
           </AboutInfo>
 
-          <GifContainer isVisible={isVisible}>
+          <GifContainer $isVisible={isVisible}>
             <Image
               src='/programming.gif'
               alt='Tiago Silva'
               width={600}
               height={600}
               quality='95'
-              layout='responsive'
+              sizes="100vw"
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
               priority={true}
+              unoptimized={true}
             />
           </GifContainer>
         </WrapperAbout>

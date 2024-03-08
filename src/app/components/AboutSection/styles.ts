@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { slideInLeft, slideInRight } from "../Animation/styles";
 
 interface AboutSectionProps {
-  isVisible: boolean;
+  $isVisible: boolean;
 }
 
 export const Container = styled.section`
@@ -39,8 +39,8 @@ export const WrapperImage = styled.div<AboutSectionProps>`
   max-width: 10rem;
   padding: 0 0.625rem;
 
-  ${({ isVisible }) =>
-    isVisible &&
+  ${({ $isVisible }) =>
+    $isVisible &&
     css`
       animation: ${slideInLeft} 2s ease-out;
   `}
@@ -74,8 +74,8 @@ export const WrapperText = styled.div<AboutSectionProps>`
   align-items: flex-start;
   word-wrap: break-word;
 
-  ${({ isVisible }) =>
-    isVisible &&
+  ${({ $isVisible }) =>
+    $isVisible &&
     css`
       animation: ${slideInRight} 2s ease-out;
   `}

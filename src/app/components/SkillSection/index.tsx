@@ -39,7 +39,7 @@ export const SkillSection = () => {
       <Container id="skills" style={{ opacity: isVisible ? 1 : 0 }}>
         <Title>Minhas Skills</Title>
 
-        <Content isVisible={isVisible}>
+        <Content $isVisible={isVisible}>
 
           <WrapperIcon>
             <HtmlIcon />
