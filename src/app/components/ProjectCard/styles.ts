@@ -28,10 +28,14 @@ export const Footer = styled.div`
 `;
 
 export const FooterTitle = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+  }
 `;
 
 export const FooterText = styled.h1`
