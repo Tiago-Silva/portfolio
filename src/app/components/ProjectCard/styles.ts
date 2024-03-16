@@ -7,12 +7,17 @@ export const Container = styled.div`
   padding: 10px;
 
   width: 30%;
-  height: 10%;
+  height: 400px;
 
   max-height: 400px;
 
   border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 4px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const WrapperImage = styled.div`
@@ -46,6 +51,8 @@ export const FooterText = styled.h1`
   font-size: 0.9rem;
   color: ${({ theme }) => theme.colors.secondary};
   margin: 0;
+
+  text-align: center;
 `;
 
 export const WrapperGitInfo = styled.div`
