@@ -10,6 +10,10 @@ export const Container = styled.section`
   flex-direction: column;
 
   margin-top: 20px;
+
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const WrapperTitle = styled.div`

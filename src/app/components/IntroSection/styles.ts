@@ -8,6 +8,11 @@ interface IntroProps {
 
 export const Container = styled.section`
   position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 

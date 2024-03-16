@@ -6,6 +6,8 @@ export const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  min-height: 100vh;
 `;
 
 export const Title = styled.h1`

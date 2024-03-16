@@ -30,6 +30,8 @@ export const Container = styled.section`
   align-items: center;
 
   width: 100%;
+
+  min-height: 100vh;
 `;
 
 export const Title = styled.h1`
