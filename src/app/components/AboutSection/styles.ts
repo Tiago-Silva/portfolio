@@ -30,6 +30,12 @@ export const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const WrapperImage = styled.div<AboutSectionProps>`
