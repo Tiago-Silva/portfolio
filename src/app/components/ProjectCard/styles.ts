@@ -18,6 +18,11 @@ export const Container = styled.div`
     width: 100%;
     height: auto;
   }
+
+  @media (max-width: 1038px) {
+    width: 45%;
+    height: auto;
+  }
 `;
 
 export const WrapperImage = styled.div`

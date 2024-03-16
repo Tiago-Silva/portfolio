@@ -55,7 +55,7 @@ export const WrapperImage = styled.div<AboutSectionProps>`
       animation: ${slideInLeft} 2s ease-out;
   `}
 
-  @media (min-width: 1024px) {
+  @media (min-width: 769px) {
     max-width: none;
   }
 `;
