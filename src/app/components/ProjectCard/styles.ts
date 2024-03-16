@@ -14,13 +14,13 @@ export const Container = styled.div`
   border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 4px;
 
-  @media (max-width: 768px) {
-    width: 100%;
+  @media (max-width: 1038px) {
+    width: 45%;
     height: auto;
   }
 
-  @media (max-width: 1038px) {
-    width: 45%;
+  @media (max-width: 768px) {
+    width: 100%;
     height: auto;
   }
 `;
