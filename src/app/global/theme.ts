@@ -5,6 +5,8 @@ const theme = {
   colors: {
       primary: '#7c3aed',
       secondary: '#828282',
+
+      primary_light: 'rgba(124, 58, 237, 0.7)',
       
       image_background: '#F9FAFB',
       success: '#12A454',
