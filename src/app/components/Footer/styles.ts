@@ -52,7 +52,7 @@ export const WrapperText = styled.div`
 export const Text = styled.h1`
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.secondary};
-  margin-bottom: -15px;
+  margin-bottom: -10px;
 
   @media (max-width: 768px) {
     font-size: 0.8rem;
