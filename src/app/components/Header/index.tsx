@@ -26,26 +26,24 @@ export const Header = () => {
       <WrapperMenuIcon onClick={handleMenuClick}>
         <MenuIcon />
       </WrapperMenuIcon>
-      {isNavVisible && (
-        <Nav isNavVisible={isNavVisible}>
-          <LinkMenu to="intro" smooth={true} duration={500}>
-            <HomeIcon />
-            Intro
-          </LinkMenu>
-          <LinkMenu to="about" smooth={true} duration={500}>
-            <AboutIcon />
-            About
-          </LinkMenu>
-          <LinkMenu to="projects" smooth={true} duration={500}>
-            <ProjectIcon />
-            Project
-          </LinkMenu>
-          <LinkMenu to="skills" smooth={true} duration={500}>
-            <SkillsIcon />
-            Skill
-          </LinkMenu>
-        </Nav>
-      )}
+      <Nav isNavVisible={isNavVisible}>
+        <LinkMenu to="intro" smooth={true} duration={500}>
+          <HomeIcon />
+          Intro
+        </LinkMenu>
+        <LinkMenu to="about" smooth={true} duration={500}>
+          <AboutIcon />
+          About
+        </LinkMenu>
+        <LinkMenu to="projects" smooth={true} duration={500}>
+          <ProjectIcon />
+          Project
+        </LinkMenu>
+        <LinkMenu to="skills" smooth={true} duration={500}>
+          <SkillsIcon />
+          Skill
+        </LinkMenu>
+      </Nav>
     </Container>
   );
 }
