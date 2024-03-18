@@ -5,7 +5,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { FiMenu } from 'react-icons/fi';
 
 interface HeaderProps {
-  isNavVisible: boolean;
+  $isNavVisible: boolean;
 }
 
 export const Container = styled.header`
@@ -37,7 +37,7 @@ export const Nav = styled.nav<HeaderProps>`
   gap: 10rem;
 
   @media (max-width: 768px) {
-    display: ${({ isNavVisible }) => (isNavVisible ? 'flex' : 'none')};
+    display: ${({ $isNavVisible }) => ($isNavVisible ? 'flex' : 'none')};
     flex-direction: column;
     gap: 0.5rem;
 

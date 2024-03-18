@@ -26,7 +26,7 @@ export const Header = () => {
       <WrapperMenuIcon onClick={handleMenuClick}>
         <MenuIcon />
       </WrapperMenuIcon>
-      <Nav isNavVisible={isNavVisible}>
+      <Nav $isNavVisible={isNavVisible}>
         <LinkMenu to="intro" smooth={true} duration={500}>
           <HomeIcon />
           Intro
