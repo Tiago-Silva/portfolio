@@ -1,28 +1,29 @@
 import styled from "styled-components";
 import { FaGithub } from 'react-icons/fa';
 
+const media = (width: number, content: string) => `
+  @media (max-width: ${width}px) {
+    ${content}
+  }
+`;
 
 export const Container = styled.div`
   background-color: #212121;
   padding: 10px;
 
-  width: 30%;
-  height: 400px;
+  width: 95%;
+  height: 100%;
 
-  max-height: 400px;
 
   border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 4px;
 
-  @media (max-width: 1038px) {
-    width: 45%;
-    height: auto;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-    height: auto;
-  }
+  ${media(1038, 'width: 93%; height: auto;')}
+  ${media(998, 'width: 92%; height: auto;')}
+  ${media(800, 'width: 90%; height: auto;')}
+  ${media(625, 'width: 95%; height: auto;')}
+  ${media(568, 'width: 90%; height: auto;')}
+  ${media(350, 'width: 80%; height: auto;')}
 `;
 
 export const WrapperImage = styled.div`

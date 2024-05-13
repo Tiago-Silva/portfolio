@@ -20,17 +20,3 @@ export const Title = styled.h1`
   }
 `;
 
-export const Content = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  gap: 10px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-`;
