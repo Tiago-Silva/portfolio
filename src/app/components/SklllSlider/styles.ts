@@ -1,0 +1,49 @@
+import styled from "styled-components";
+import { Swiper } from 'swiper/react';
+
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 10px;
+`;
+
+export const Content = styled(Swiper)`
+    height: 100%;
+`;
+
+export const WrapperIcon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #212121;
+  padding: 20px;
+
+  width: 80%;
+  height: 6%;
+
+  box-shadow: 0px 0px 10px 2px ${({ theme }) => theme.colors.primary};
+  border-radius: 4px;
+
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    width: 20%;
+    height: 12%;
+  }
+`;
+
+export const Text = styled.h1`
+  font-size: 1.2vw;
+  color: ${({ theme }) => theme.colors.secondary};
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+  }
+`;
