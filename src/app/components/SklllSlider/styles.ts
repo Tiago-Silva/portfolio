@@ -2,6 +2,12 @@ import styled from "styled-components";
 import { Swiper } from 'swiper/react';
 
 
+const media = (width: number, content: string) => `
+  @media (max-width: ${width}px) {
+    ${content}
+  }
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -32,10 +38,11 @@ export const WrapperIcon = styled.div`
 
   margin-top: 10px;
 
-  @media (max-width: 768px) {
-    width: 20%;
-    height: 12%;
-  }
+  ${media(998, 'width: 70%; min-height: 150px;')}
+  ${media(625, 'width: 70%; height: auto;')}
+  ${media(450, 'width: 68%; height: auto;')}
+  ${media(370, 'width: 60%; min-height: 100px;')}
+  ${media(340, 'width: 90%; min-height: 100px;')}
 `;
 
 export const Text = styled.h1`

@@ -31,9 +31,12 @@ const SkillSlider = ({
             slidesPerView: 7,
           },
           998: {
-            slidesPerView: 2,
+            slidesPerView: 4,
           },
           625: {
+            slidesPerView: 3,
+          },
+          340: {
             slidesPerView: 2,
           },
           0: {
