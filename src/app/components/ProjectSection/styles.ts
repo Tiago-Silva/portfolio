@@ -14,6 +14,7 @@ export const Title = styled.h1`
   font-size: 3rem;
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
+  margin: 0;
 
   @media (max-width: 768px) {
     font-size: 2rem;

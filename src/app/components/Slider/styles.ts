@@ -6,7 +6,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: 100vh;
+  height: auto;
+
+  margin-bottom: 10px;
 `;
 
 export const Content = styled(Swiper)`

@@ -18,10 +18,12 @@ export const Container = styled.div`
   border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 4px;
 
-  ${media(1038, 'width: 93%; height: auto;')}
-  ${media(998, 'width: 92%; height: auto;')}
-  ${media(800, 'width: 90%; height: auto;')}
-  ${media(625, 'width: 95%; height: auto;')}
+  ${media(2560, 'width: 93%; min-height: 400px;')}
+  ${media(1080, 'width: 93%; min-height: 380px;')}
+  ${media(1038, 'width: 93%; min-height: 350px;')}
+  ${media(998, 'width: 92%; min-height: 350px;')}
+  ${media(800, 'width: 90%; min-height: 350px;')}
+  ${media(625, 'width: 95%; min-height: 350px;')}
   ${media(568, 'width: 90%; height: auto;')}
   ${media(350, 'width: 80%; height: auto;')}
 `;
