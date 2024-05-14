@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
-import { 
+import {
   SiHtml5,
-  SiCss3, 
-  SiJavascript, 
-  SiMysql, 
-  SiSpringboot, 
-  SiReact, 
-  SiGithub, 
+  SiCss3,
+  SiJavascript,
+  SiMysql,
+  SiSpringboot,
+  SiReact,
+  SiGithub,
   SiDocker,
   SiTypescript,
   SiStyledcomponents,
@@ -60,39 +60,6 @@ export const Content = styled.div<SkillProps>`
   `}
 
   gap: 10px;
-`;
-
-export const WrapperIcon = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background-color: #212121;
-  padding: 20px;
-
-  width: 10%;
-  height: 6%;
-
-  box-shadow: 0px 0px 10px 2px ${({ theme }) => theme.colors.primary};
-  border-radius: 4px;
-
-  margin-top: 10px;
-
-  @media (max-width: 768px) {
-    width: 20%;
-    height: 12%;
-  }
-`;
-
-export const Text = styled.h1`
-  font-size: 1.2vw;
-  color: ${({ theme }) => theme.colors.secondary};
-  font-weight: 700;
-
-  @media (max-width: 768px) {
-    font-size: 3vw;
-  }
 `;
 
 export const HtmlIcon = styled(SiHtml5)`

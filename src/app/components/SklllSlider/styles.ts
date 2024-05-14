@@ -27,7 +27,7 @@ export const WrapperIcon = styled.div`
   width: 80%;
   height: 6%;
 
-  box-shadow: 0px 0px 10px 2px ${({ theme }) => theme.colors.primary};
+  box-shadow: 0 0 10px 2px ${({ theme }) => theme.colors.primary};
   border-radius: 4px;
 
   margin-top: 10px;

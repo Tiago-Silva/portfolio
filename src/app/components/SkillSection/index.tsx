@@ -3,28 +3,48 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 
 import {
-  Container, 
-  Content, 
-  CssIcon, 
-  DockerIcon, 
-  ExpoIcon, 
-  GitIcon, 
-  HtmlIcon, 
-  JavaIcon, 
-  JavasciptIcon, 
-  MysqlIcon, 
-  NextIcon, 
-  ReactIcon, 
-  SpringIcon, 
-  SpringSecurityIcon, 
-  StyledIcon, 
-  TauriIcon, 
-  Text, 
+  Container,
+  Content,
+  CssIcon,
+  DockerIcon,
+  ExpoIcon,
+  GitIcon,
+  HtmlIcon,
+  JavaIcon,
+  JavasciptIcon,
+  MysqlIcon,
+  NextIcon,
+  ReactIcon,
+  SpringIcon,
+  SpringSecurityIcon,
+  StyledIcon,
+  TauriIcon,
   Title,
   TypeScriptIcon,
-  WrapperIcon
 } from './styles';
+import SkillSlider from "@/app/components/SklllSlider/skillSlider";
 
+const skills = [
+  { icon: HtmlIcon, text: 'HTML' },
+  { icon: CssIcon, text: 'CSS' },
+  { icon: JavasciptIcon, text: 'JavaScript' },
+  { icon: ReactIcon, text: 'React.JS' },
+  { icon: ReactIcon, text: 'React Native' },
+  { icon: StyledIcon, text: 'S. components' },
+  { icon: TypeScriptIcon, text: 'Typescript' },
+  { icon: NextIcon, text: 'NEXTJS' },
+];
+
+const skillsTwo = [
+  { icon: ExpoIcon, text: 'EXPO' },
+  { icon: TauriIcon, text: 'Tauri' },
+  { icon: MysqlIcon, text: 'MYQL' },
+  { icon: SpringIcon, text: 'Spring Boot' },
+  { icon: SpringSecurityIcon, text: 'Spring security' },
+  { icon: JavaIcon, text: 'Java' },
+  { icon: GitIcon, text: 'GitHub' },
+  { icon: DockerIcon, text: 'Docker' },
+];
 
 export const SkillSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,86 +73,13 @@ export const SkillSection = () => {
       <Title>Minhas Skills</Title>
 
       <Content $isVisible={isVisible}>
+        <SkillSlider
+          skills={skills}
+        />
 
-        <WrapperIcon>
-          <HtmlIcon />
-          <Text>HTML</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <CssIcon />
-          <Text>CSS</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <JavasciptIcon />
-          <Text>JavaScript</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <ReactIcon />
-          <Text>React.JS</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <ReactIcon />
-          <Text>React Native</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <StyledIcon />
-          <Text>S. components</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <TypeScriptIcon />
-          <Text>Typescript</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <NextIcon />
-          <Text>NEXTJS</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <ExpoIcon />
-          <Text>EXPO</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <TauriIcon />
-          <Text>Tauri</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <MysqlIcon />
-          <Text>MYQL</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <SpringIcon />
-          <Text>Spring Boot</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <SpringSecurityIcon />
-          <Text>Spring security</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <JavaIcon />
-          <Text>Java</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <GitIcon />
-          <Text>GitHub</Text>
-        </WrapperIcon>
-
-        <WrapperIcon>
-          <DockerIcon />
-          <Text>Docker</Text>
-        </WrapperIcon>
+        <SkillSlider
+          skills={skillsTwo}
+        />
 
       </Content>
     </Container>
